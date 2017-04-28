@@ -1,0 +1,17 @@
+
+  <h1> 이 카드에 생각한 숫자가 있습니까?</h1>
+
+   <%= image_tag("card_2.jpg", :alt => "card_2") %>
+
+  <form action= "/magic/card_3" method="get">
+             <input type="radio" name="num2" value="1" required/>  
+             <%= image_tag("yes.jpg", :alt => "yes") %>
+                                                                                 <!---  required 반드시 입력 요구 -->  
+             <input type="radio" name="num2" value="0"/>
+             <%= image_tag("no.jpg", :alt => "no") %>
+              <input href="/magic/card_3" type="submit" value="Submit">
+        </form>
+        
+
+
+  <a href="/magic/card_3" >  <%= image_tag("next.jpg", :alt => "next") %> </a>
